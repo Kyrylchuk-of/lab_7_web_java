@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset=UTF-8>
+  <link type="text/css" rel="stylesheet" href="mywebapp.css">
+  <title>Web Application Starter Project</title>
+  <script src="mywebap/mywebap.nocache.js"></script>
+  <style>
+    /* Заголовок */
+    .header {
+      background-color: #2c3e50;
+      color: #ffffff;
+      font-size: 36px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Панель форми */
+    .formPanel {
+      max-width: 100%;
+      margin: 20px auto;
+      padding: 30px;
+    }
+
+    /* Поля вводу */
+    .inputField {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+
+    .submitButton {
+      width: 100%;
+      padding: 15px;
+      background-color: #3498db;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submitButton:hover {
+      background-color: #2980b9;
+    }
+    .exchange-rates-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .exchange-rates-table th, .exchange-rates-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .exchange-rates-table th {
+      background-color: #f2f2f2;
+    }
+    #weatherContainer {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+    .custom-weather-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .custom-weather-button:hover {
+      background-color: #45a049;
+    }
+
+
+  </style>
+</head>
+<body>
+<div id="header"></div>
+<noscript>
+  <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+    Your web browser must have JavaScript enabled
+    in order for this application to display correctly.
+  </div>
+</noscript>
+<table align="center">
+  <tr>
+    <td colspan="2" style="font-weight:bold;">Please enter your data:</td>
+  </tr>
+  <tr>
+    <td id="nameFieldContainer"></td>
+    <td id="sendButtonContainer"></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
+  </tr>
+</table>
+<div id="formContainer" class="">
+
+</div>
+<center><div id="appleet"></div></center><br>
+<div id="weather">
+  <div id="weatherButton"></div>
+  <center><div id="weatherContainer"></div></center>
+</div>
+</body>
+</html>
